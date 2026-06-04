@@ -22,10 +22,10 @@
   This essay presents a tension among four commitments about actual human
   consciousness: that it is causally relevant to behavior, that it is physically
   realized, that physical processes can in principle be exactly simulated by
-  checkpointable processes, and that checkpointable processes do not instantiate
-  actual human consciousness. The argument does not establish which commitment is
-  false. It argues only that, given the definitions of exact causal simulation and
-  causal relevance used here, the four cannot all be maintained together.
+  checkpointable processes, and that checkpointable processes cannot instantiate
+  consciousness. The argument does not establish which commitment is false. It
+  argues only that, given the definitions of exact causal simulation and causal
+  relevance used here, the four cannot all be maintained together.
 \end{abstract}
 
 \section{Motivation}
@@ -85,7 +85,7 @@ transition rules, not on the actual causal history by which that state was
 produced.
 
 \paragraph{P4. Checkpoint exclusion.}
-No checkpointable process instantiates actual human consciousness.
+No checkpointable process instantiates consciousness.
 
 This is the anti-checkpoint intuition. A conscious moment does not seem to be
 created merely by loading a state and executing the next exact transition. If
@@ -107,7 +107,7 @@ simulation is exact, it preserves the relevant causal role of \(x\). But if
 consciousness is genuinely causally relevant to that role, then preserving the
 role requires instantiating consciousness. Otherwise the same causal role would
 be preserved without consciousness, contrary to P1. So \(s\) must instantiate
-consciousness. But P4 says no checkpointable process instantiates
+consciousness. But P4 says checkpointable processes cannot instantiate
 consciousness. Contradiction.
 
 The result is a quadrilemma rather than a proof of any particular metaphysical
@@ -165,7 +165,8 @@ Let
 \[
   b = \text{some behavior to which } C \text{ is causally relevant}.
 \]
-Let \(s,y,z\) range over processes or simulations.
+Let \(s,y,z\) range over processes or simulations, and let \(c\) range over
+consciousness or conscious episodes.
 
 \subsection*{Predicates}
 
@@ -193,8 +194,8 @@ Let \(s,y,z\) range over processes or simulations.
   P2:\quad & \mathrm{Physical}(x),                                         \\
   P3:\quad & \forall z\bigl(\mathrm{Physical}(z)\to
   \exists s(\mathrm{ExactSim}(s,z)\land \mathrm{Checkpointable}(s))\bigr), \\
-  P4:\quad & \forall y\bigl(\mathrm{Checkpointable}(y)\to
-  \neg \mathrm{Instantiates}(y,C)\bigr).
+  P4:\quad & \forall y\forall c\bigl(\mathrm{Checkpointable}(y)\to
+  \neg \mathrm{Instantiates}(y,c)\bigr).
 \end{align*}
 
 \subsection*{Conceptual Rules}
@@ -253,10 +254,16 @@ Otherwise consciousness was not causally relevant in the intended sense.
 
   \item From P4, instantiate \(y=s_0\):
         \[
+          \forall c\bigl(\mathrm{Checkpointable}(s_0)\to
+          \neg \mathrm{Instantiates}(s_0,c)\bigr).
+        \]
+
+  \item Instantiate \(c=C\):
+        \[
           \mathrm{Checkpointable}(s_0)\to \neg \mathrm{Instantiates}(s_0,C).
         \]
 
-  \item From steps 4 and 8:
+  \item From steps 4 and 9:
         \[
           \neg \mathrm{Instantiates}(s_0,C).
         \]
