@@ -39,7 +39,7 @@ jobs:
             <head>
               <meta charset="utf-8">
               <meta name="viewport" content="width=device-width, initial-scale=1">
-              <title>The Checkpoint Quadrilemma</title>
+              <title>The Consciousness Checkpoint Quadrilemma</title>
               <style>
                 body {
                   margin: 0;
@@ -84,10 +84,10 @@ jobs:
             </head>
             <body>
               <header>
-                <h1>The Checkpoint Quadrilemma</h1>
+                <h1>The Consciousness Checkpoint Quadrilemma</h1>
                 <a href="checkpoint_quadrilemma.pdf">Open PDF</a>
               </header>
-              <iframe src="checkpoint_quadrilemma.pdf" title="The Checkpoint Quadrilemma PDF"></iframe>
+              <iframe src="checkpoint_quadrilemma.pdf" title="The Consciousness Checkpoint Quadrilemma PDF"></iframe>
             </body>
           </html>
           HTML

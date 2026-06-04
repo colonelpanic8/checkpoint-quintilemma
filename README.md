@@ -1,4 +1,4 @@
-# The Checkpoint Quadrilemma
+# The Consciousness Checkpoint Quadrilemma
 
 This repository contains a LaTeX essay by Ivan Malison on the Checkpoint
 Quadrilemma.
