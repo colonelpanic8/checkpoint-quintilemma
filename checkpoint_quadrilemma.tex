@@ -1,0 +1,280 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{proposition}{Proposition}
+
+\title{The Checkpoint Quadrilemma}
+\author{Ivan Malison}
+\date{}
+
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2em}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  This essay presents a tension among four commitments about actual human
+  consciousness: that it is causally relevant to behavior, that it is physically
+  realized, that physical processes can in principle be exactly simulated by
+  checkpointable processes, and that checkpointable processes do not instantiate
+  actual human consciousness. The argument does not establish which commitment is
+  false. It argues only that, given the definitions of exact causal simulation and
+  causal relevance used here, the four cannot all be maintained together.
+\end{abstract}
+
+\section{Motivation}
+
+Let \(C\) be actual human consciousness, or one actual human conscious episode.
+Let \(x\) be the actual process realizing \(C\), and let \(b\) be some behavior
+to which \(C\), as realized by \(x\), is causally relevant.
+
+The motivating thought is simple. If consciousness is physical and causally
+relevant, then the physical process realizing consciousness should, at least in
+principle, be reproducible by an exact causal simulation. But if the relevant
+simulation is checkpointable, if it can be saved, copied, restored, decomposed,
+or resumed from a stored state, then it becomes difficult to understand how a
+single conscious moment is instantiated by some particular resumed transition.
+Why should this numerical update, from a loaded state, be consciousness-making?
+Why that transition rather than the stored state, the omitted prior causal
+history, or the abstract transition rule?
+
+This is not primarily an argument about personal identity over time. One might
+deny that conscious moments are unified across time, or claim that a subject
+experiences no gap when a process is paused and resumed. The deeper worry is
+about the occurrence of even a single conscious moment. If a conscious moment
+can be produced by resuming an exact state-transition from a checkpoint, then
+the occurrence of consciousness appears to depend on a local computational
+event whose causal ancestry may be arbitrary. If it cannot, then a natural
+physicalist picture of exact simulation is under pressure.
+
+\section{The Four Commitments}
+
+\paragraph{P1. Causal relevance.}
+Actual human consciousness is causally relevant to behavior.
+
+This does not require consciousness to be a separate causal force over and
+above the physical process realizing it. It is compatible with consciousness
+being dependent on, or even inseparable from, its physical realizer. What P1
+rules out is the stronger epiphenomenalist possibility that the same relevant
+behavior-producing causal role could be fully preserved while consciousness is
+absent. In this sense, consciousness is causally relevant if preserving the
+relevant causal explanation of the behavior requires preserving the
+consciousness-involving aspect of the process.
+
+\paragraph{P2. Physical realization.}
+The actual process \(x\) realizing human consciousness \(C\) is physical.
+
+This is the broadly physicalist or naturalist commitment: actual human
+consciousness exists because of, in, or as some physical process.
+
+\paragraph{P3. General physical checkpointability.}
+Any physical process can, in principle, have an exact checkpointable simulation.
+
+Here an exact simulation is not a mere abstract model, like a weather
+simulation that does not make rain. It is a causally exact reproduction of the
+relevant state-transitions and causal roles of the original process. A process
+is checkpointable when its state can be saved, copied, restored, decomposed, or
+resumed such that later continuation depends only on the saved state and
+transition rules, not on the actual causal history by which that state was
+produced.
+
+\paragraph{P4. Checkpoint exclusion.}
+No checkpointable process instantiates actual human consciousness.
+
+This is the anti-checkpoint intuition. A conscious moment does not seem to be
+created merely by loading a state and executing the next exact transition. If
+the prior history can be replaced by stored information, then the conscious
+moment seems to depend on an arbitrary local computation, which seems
+insufficient to ground phenomenal occurrence.
+
+\section{The Quadrilemma}
+
+\begin{proposition}[Checkpoint Quadrilemma]
+  P1--P4 cannot all be true.
+\end{proposition}
+
+\noindent
+Suppose P1 and P2 are true. Then actual human consciousness is causally
+relevant and physically realized by \(x\). Suppose P3 is true. Since \(x\) is
+physical, there is an exact checkpointable simulation \(s\) of \(x\). Since the
+simulation is exact, it preserves the relevant causal role of \(x\). But if
+consciousness is genuinely causally relevant to that role, then preserving the
+role requires instantiating consciousness. Otherwise the same causal role would
+be preserved without consciousness, contrary to P1. So \(s\) must instantiate
+consciousness. But P4 says no checkpointable process instantiates
+consciousness. Contradiction.
+
+The result is a quadrilemma rather than a proof of any particular metaphysical
+view. One may reject causal relevance, physical realization, general physical
+checkpointability, or checkpoint exclusion. The argument says that these
+commitments do not form a stable package.
+
+\section{Four Escape Routes}
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item \textbf{Reject P1: consciousness is not causally relevant.}
+        This is epiphenomenalism. Behavior, including speech and reasoning about
+        consciousness, can be produced without consciousness itself doing causal
+        work.
+
+  \item \textbf{Reject P2: consciousness is not physically realized.}
+        This avoids the checkpoint problem by giving up a straightforward
+        physicalist picture.
+
+  \item \textbf{Reject P3: consciousness-relevant physical processes are not
+          exactly checkpointably simulable.}
+        This need not mean rejecting physicalism. One might instead hold that
+        consciousness requires a physically integrated causal nexus: a transition in
+        which distributed states across the brain jointly determine later states in a
+        way that cannot be replaced by arbitrary copying, loading, decomposition, and
+        recombination.
+
+  \item \textbf{Reject P4: checkpointable processes can instantiate
+          consciousness.}
+        This is the clean computationalist answer. Its cost is that a single
+        conscious moment may be instantiated by executing the right transition from
+        the right stored state, regardless of how that state was produced.
+\end{enumerate}
+
+\section{Relation to Chinese Room-Style Objections}
+
+The Checkpoint Quadrilemma is adjacent to Chinese Room-style objections because
+it pressures the idea that computation can create consciousness. But it differs
+from those arguments in an important respect: it does not simply assert that
+computation cannot be conscious. Instead, it maps a tension among causal
+relevance, physical realization, exact simulation, and the checkpoint intuition.
+It pressures computationalism from within, by asking whether a checkpointable
+realization can preserve the relevant causal role without thereby instantiating
+the consciousness that was supposed to be relevant to that role.
+
+\section{Formalization}
+
+Let
+\[
+  C = \text{actual human consciousness, or one actual human conscious episode},
+\]
+\[
+  x = \text{the actual process realizing } C,
+\]
+\[
+  b = \text{some behavior to which } C \text{ is causally relevant}.
+\]
+Let \(s,y,z\) range over processes or simulations.
+
+\subsection*{Predicates}
+
+\begin{align*}
+  \mathrm{Realizes}(x,C)
+   & \quad \text{means } x \text{ realizes consciousness } C,                                     \\
+  \mathrm{CausallyRelevant}(C,x,b)
+   & \quad \text{means } C, \text{ as realized by } x, \text{ is causally relevant to } b,        \\
+  \mathrm{Physical}(x)
+   & \quad \text{means } x \text{ is physical},                                                   \\
+  \mathrm{ExactSim}(s,x)
+   & \quad \text{means } s \text{ is an exact causal simulation of } x,                           \\
+  \mathrm{Checkpointable}(s)
+   & \quad \text{means } s \text{ can be saved, copied, restored, decomposed, or resumed},        \\
+  \mathrm{Instantiates}(s,C)
+   & \quad \text{means } s \text{ instantiates consciousness } C,                                 \\
+  \mathrm{PreservesRole}(s,x,b)
+   & \quad \text{means } s \text{ preserves } x\text{'s relevant causal role with respect to } b.
+\end{align*}
+
+\subsection*{Premises}
+
+\begin{align*}
+  P1:\quad & \mathrm{Realizes}(x,C)\land \mathrm{CausallyRelevant}(C,x,b), \\
+  P2:\quad & \mathrm{Physical}(x),                                         \\
+  P3:\quad & \forall z\bigl(\mathrm{Physical}(z)\to
+  \exists s(\mathrm{ExactSim}(s,z)\land \mathrm{Checkpointable}(s))\bigr), \\
+  P4:\quad & \forall y\bigl(\mathrm{Checkpointable}(y)\to
+  \neg \mathrm{Instantiates}(y,C)\bigr).
+\end{align*}
+
+\subsection*{Conceptual Rules}
+
+\begin{align*}
+  D1:\quad & \mathrm{ExactSim}(s,x)\to \mathrm{PreservesRole}(s,x,b), \\
+  D2:\quad & \bigl(\mathrm{CausallyRelevant}(C,x,b)\land
+  \mathrm{PreservesRole}(s,x,b)\bigr)\to \mathrm{Instantiates}(s,C).
+\end{align*}
+
+\noindent
+D1 says that if \(s\) is an exact causal simulation of \(x\), then \(s\)
+preserves \(x\)'s relevant causal role with respect to \(b\). D2 says that if
+consciousness is causally relevant to \(b\), and \(s\) preserves the relevant
+causal role by which \(b\) is produced, then \(s\) instantiates consciousness.
+Otherwise consciousness was not causally relevant in the intended sense.
+
+\subsection*{Proof}
+
+\begin{enumerate}
+  \item From P2:
+        \[
+          \mathrm{Physical}(x).
+        \]
+
+  \item From P3, instantiate \(z=x\):
+        \[
+          \mathrm{Physical}(x)\to
+          \exists s(\mathrm{ExactSim}(s,x)\land \mathrm{Checkpointable}(s)).
+        \]
+
+  \item Therefore:
+        \[
+          \exists s(\mathrm{ExactSim}(s,x)\land \mathrm{Checkpointable}(s)).
+        \]
+
+  \item Choose such an \(s_0\):
+        \[
+          \mathrm{ExactSim}(s_0,x)\land \mathrm{Checkpointable}(s_0).
+        \]
+
+  \item From D1:
+        \[
+          \mathrm{PreservesRole}(s_0,x,b).
+        \]
+
+  \item From P1:
+        \[
+          \mathrm{CausallyRelevant}(C,x,b).
+        \]
+
+  \item From D2, using steps 5 and 6:
+        \[
+          \mathrm{Instantiates}(s_0,C).
+        \]
+
+  \item From P4, instantiate \(y=s_0\):
+        \[
+          \mathrm{Checkpointable}(s_0)\to \neg \mathrm{Instantiates}(s_0,C).
+        \]
+
+  \item From steps 4 and 8:
+        \[
+          \neg \mathrm{Instantiates}(s_0,C).
+        \]
+
+  \item Contradiction:
+        \[
+          \mathrm{Instantiates}(s_0,C)\land \neg \mathrm{Instantiates}(s_0,C).
+        \]
+\end{enumerate}
+
+\noindent
+Thus:
+\[
+  \neg(P1\land P2\land P3\land P4).
+\]
+Equivalently:
+\[
+  \neg P1\lor \neg P2\lor \neg P3\lor \neg P4.
+\]
+
+\end{document}
