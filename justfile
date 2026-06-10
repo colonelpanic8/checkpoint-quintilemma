@@ -1,7 +1,7 @@
 set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
 
-essay_tex := "checkpoint_quadrilemma.tex"
-essay_pdf := "checkpoint_quadrilemma.pdf"
+essay_tex := "checkpoint_quintilemma.tex"
+essay_pdf := "checkpoint_quintilemma.pdf"
 
 default:
     @just --list
@@ -25,7 +25,7 @@ distclean: clean
     rm -f {{essay_pdf}}
 
 nix-build:
-    nix build .#checkpoint-quadrilemma
+    nix build .#checkpoint-quintilemma
 
 nix-check:
     nix flake check

@@ -1,5 +1,5 @@
 {
-  description = "Checkpoint Quadrilemma build environment";
+  description = "Checkpoint Quintilemma build environment";
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
@@ -24,8 +24,8 @@
             ;
         };
 
-        checkpointQuadrilemma = pkgs.stdenvNoCC.mkDerivation {
-          pname = "checkpoint-quadrilemma";
+        checkpointQuintilemma = pkgs.stdenvNoCC.mkDerivation {
+          pname = "checkpoint-quintilemma";
           version = "0.1.0";
           src = ./.;
           nativeBuildInputs = [
@@ -34,14 +34,14 @@
 
           buildPhase = ''
             runHook preBuild
-            latexmk -pdf -interaction=nonstopmode -file-line-error -halt-on-error checkpoint_quadrilemma.tex
+            latexmk -pdf -interaction=nonstopmode -file-line-error -halt-on-error checkpoint_quintilemma.tex
             runHook postBuild
           '';
 
           installPhase = ''
             runHook preInstall
             mkdir -p "$out"
-            cp checkpoint_quadrilemma.pdf "$out/"
+            cp checkpoint_quintilemma.pdf "$out/"
             runHook postInstall
           '';
         };
@@ -56,11 +56,11 @@
         };
 
         packages = {
-          default = checkpointQuadrilemma;
-          checkpoint-quadrilemma = checkpointQuadrilemma;
+          default = checkpointQuintilemma;
+          checkpoint-quintilemma = checkpointQuintilemma;
         };
 
-        checks.checkpoint-quadrilemma = checkpointQuadrilemma;
+        checks.checkpoint-quintilemma = checkpointQuintilemma;
       }
     );
 }
