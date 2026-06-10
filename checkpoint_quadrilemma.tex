@@ -8,7 +8,7 @@
 
 \newtheorem{proposition}{Proposition}
 
-\title{The Consciousness Checkpoint Quadrilemma}
+\title{The Consciousness Checkpoint Quintilemma}
 \author{Ivan Malison}
 \date{}
 
@@ -20,16 +20,17 @@
 \maketitle
 
 \begin{abstract}
-  This essay presents a tension among four commitments about actual human
-  consciousness: that it is causally relevant to behavior, that it is physically
-  realized, that physical processes can in principle be exactly simulated by
-  checkpointable processes, and that checkpointable processes cannot instantiate
+  This essay presents a tension among five commitments about actual human
+  consciousness: that it is causally relevant to behavior, that this causal
+  relevance transfers to any process preserving the causal role by which the
+  behavior is produced, that consciousness is physically realized, that
+  physical processes can in principle be exactly simulated by checkpointable
+  processes, and that checkpointable processes cannot instantiate
   consciousness. The argument does not establish which commitment is false. It
-  argues only that the four cannot all be maintained together, given a
-  deliberately strong reading of causal relevance on which preserving the
-  causal role by which behavior is produced requires preserving consciousness
-  itself. That reading, made explicit below, is where the weight of the
-  argument rests.
+  argues only that the five cannot all be maintained together. The weight of
+  the argument rests on the second commitment, which is stated as a commitment
+  in its own right precisely so that nothing load-bearing is hidden in a
+  definition.
 \end{abstract}
 
 \section{Motivation}
@@ -63,7 +64,7 @@ the occurrence of consciousness appears to depend on a local computational
 event whose causal ancestry may be arbitrary. If it cannot, then a natural
 physicalist picture of exact simulation is under pressure.
 
-\section{The Four Commitments}
+\section{The Five Commitments}
 \label{sec:commitments}
 
 \paragraph{P1. Causal relevance.}
@@ -71,34 +72,52 @@ Actual human consciousness is causally relevant to behavior.
 
 This does not require consciousness to be a separate causal force over and
 above the physical process realizing it. It is compatible with consciousness
-being dependent on, or even inseparable from, its physical realizer. What P1
-rules out is the possibility that the same relevant behavior-producing causal
-role could be fully preserved while consciousness is absent. In this sense,
-consciousness is causally relevant if preserving the relevant causal
-explanation of the behavior requires preserving the consciousness-involving
-aspect of the process.
+being dependent on, or even inseparable from, its physical realizer. P1 is
+read in the modest, intra-system sense: in the actual human case,
+consciousness does causal work in producing the behavior, and the behavior
+would not have been produced as it was had the consciousness been absent. What
+P1 rules out is epiphenomenalism. The further claim that this causal relevance
+transfers to other systems is not built into P1; it is stated separately, as
+P2.
 
-This is a deliberately strong reading, and it should be flagged as such. On a
-weaker and more common reading, causal relevance is counterfactual
-difference-making within the actual system: consciousness is causally relevant
-if the behavior would have differed had the consciousness been absent. The
-reading used here is stronger because it reaches across systems: it requires
-that \emph{any} process preserving the relevant causal role also preserve
-consciousness. It is, in effect, the causal-relevance half of Chalmers'
-principle of organizational invariance \cite{chalmers1996}. A reader who
-accepts the weak reading but rejects the strong one thereby rejects P1 as it is
-used here; what that costs is examined in Section~\ref{sec:escapes}.
+\paragraph{P2. Role sufficiency.}
+If consciousness is causally relevant to a behavior, then any process that
+preserves the relevant causal role by which that behavior is produced
+instantiates consciousness of the same kind.
 
-\paragraph{P2. Physical realization.}
+P2 is the bridge between causation and instantiation: it says that
+consciousness travels with the causal role it occupies, and cannot be peeled
+off the role while the role is kept. Preserving a causal role here means
+reproducing, in some substrate, the causal structure by which the behavior is
+produced; the notion is made precise alongside exact simulation under P4 and
+in Appendix~\ref{app:formal}.
+
+The case for P2 is a dilemma. If a process can do everything consciousness
+does, through the very causal structure consciousness was supposed to do it
+through, and yet lack consciousness, then it is hard to see what the causal
+relevance of consciousness ever consisted in: the role itself would be doing
+the work, and consciousness would merely accompany it---epiphenomenalism one
+level up. P2 is, in effect, the causal-relevance half of Chalmers' principle
+of organizational invariance \cite{chalmers1996}.
+
+P2 is nevertheless a substantive commitment rather than a definition, and it
+can be denied without epiphenomenalism. One might hold that consciousness is
+identical to one particular realization of the role and causally efficacious
+as that realization, while the role admits other realizations that lack it.
+What that denial costs is examined in Section~\ref{sec:escapes}. P2 is stated
+as a commitment in its own right so that a reader who denies it is rejecting a
+premise in the open, not exploiting a hidden assumption.
+
+\paragraph{P3. Physical realization.}
 The actual process realizing human consciousness is physical.
 
 This is the broadly physicalist or naturalist commitment: actual human
 consciousness exists because of, in, or as some physical process.
 
-\paragraph{P3. General physical checkpointability.}
+\paragraph{P4. General physical checkpointability.}
 Any physical process can, in principle, have an exact checkpointable simulation.
 
-Two terms in P3 carry the rest of the essay and need definitions.
+Two terms in P4 carry the rest of the essay and need definitions.
 
 An \emph{exact simulation} is not a mere abstract model, like a weather
 simulation that does not make rain. It is a causally exact reproduction, in
@@ -120,7 +139,7 @@ stored state that precedes it. Decomposition matters in what follows because
 it shows that a checkpointable process does not even require a single
 temporally or spatially integrated execution.
 
-The motivation for P3 is not that every physical process is obviously a digital
+The motivation for P4 is not that every physical process is obviously a digital
 computation. It is rather that physics appears, at least over a wide range of
 cases, to describe systems by state and transition rules in a way that makes
 exact simulation seem intelligible in principle. There may be reasons to doubt
@@ -133,7 +152,7 @@ premise is therefore strongest if ordinary neural activity is treated as the
 kind of physical mechanism whose relevant causal organization is substrate
 independent.
 
-\paragraph{P4. Checkpoint exclusion.}
+\paragraph{P5. Checkpoint exclusion.}
 No checkpointable process instantiates consciousness.
 
 This is the anti-checkpoint intuition. A conscious moment does not seem to be
@@ -142,52 +161,51 @@ the prior history can be replaced by stored information, then the conscious
 moment seems to depend on an arbitrary local computation, which seems
 insufficient to ground phenomenal occurrence.
 
-Two pressures on P4 should be acknowledged at the outset, since they matter
+Two pressures on P5 should be acknowledged at the outset, since they matter
 when the escape routes are weighed.
 
 First, checkpointability as defined above is a dispositional property. A
 simulation that runs from start to finish without ever being paused or copied
 is still checkpointable; only an unexercised capability distinguishes it from
-a non-checkpointable realization of the same dynamics. P4 as stated therefore
+a non-checkpointable realization of the same dynamics. P5 as stated therefore
 makes the presence of consciousness depend on what could have been done to a
-process rather than on anything that was done. A defender of P4 who finds this
+process rather than on anything that was done. A defender of P5 who finds this
 unacceptable can retreat to a weaker exclusion: no process that is actually
 saved and resumed partway through the relevant episode instantiates
-consciousness. The quadrilemma survives this retreat, provided P3 is read
+consciousness. The quintilemma survives this retreat, provided P4 is read
 correspondingly: as guaranteeing, in principle, an exact simulation that is
 actually checkpointed and resumed mid-episode. Nothing in the motivation for
-P3 resists that strengthening, so the argument goes through on either pairing.
+P4 resists that strengthening, so the argument goes through on either pairing.
 
-Second, the intuition behind P4 threatens to prove too much. On the
-mechanistic picture used to motivate P3, the brain's own dynamics are already
+Second, the intuition behind P5 threatens to prove too much. On the
+mechanistic picture used to motivate P4, the brain's own dynamics are already
 history-independent in the relevant sense: the current physical state, however
 it was produced, determines the system's contribution to the next state. The
-question that animates P4---why should this transition, from this loaded
+question that animates P5---why should this transition, from this loaded
 state, be consciousness-making?---can be asked of the brain's own transitions
 as well. Taken at full strength, the intuition does not single out
-simulations; it pressures the conjunction of P1 and P2 directly. A defender of
-P4 therefore owes an account of what physically distinguishes the brain's
+simulations; it pressures the conjunction of P1 and P3 directly. A defender of
+P5 therefore owes an account of what physically distinguishes the brain's
 transitions from checkpointed ones. The natural candidates---integration,
 non-decomposability, the unavailability of saving and copying---point toward
-the third escape route below.
+the fourth escape route below.
 
-\section{The Quadrilemma}
+\section{The Quintilemma}
 
-\begin{proposition}[Checkpoint Quadrilemma]
-  P1--P4 cannot all be true.
+\begin{proposition}[Checkpoint Quintilemma]
+  P1--P5 cannot all be true.
 \end{proposition}
 
 \begin{proof}[Informal argument]
-  Suppose P1 and P2 are true. Then actual human consciousness is causally
-  relevant and physically realized. Suppose P3 is true. Since the actual
+  Suppose P1 and P3 are true. Then actual human consciousness is causally
+  relevant and physically realized. Suppose P4 is true. Since the actual
   consciousness-realizing process is physical, there is an exact checkpointable
   simulation of it. Since the simulation is exact, it preserves the relevant
-  causal role of the original process. But if consciousness is genuinely
-  causally relevant to that role, in the strong sense fixed by P1, then
-  preserving the role requires instantiating consciousness of the same kind.
-  Otherwise the same causal role would be preserved without consciousness,
-  contrary to P1. So the simulation must instantiate consciousness. But P4 says
-  checkpointable processes cannot instantiate consciousness. Contradiction.
+  causal role of the original process. By P2, since consciousness is causally
+  relevant to the behavior and the simulation preserves the causal role by
+  which it is produced, the simulation instantiates consciousness of the same
+  kind. But P5 says checkpointable processes cannot instantiate consciousness.
+  Contradiction.
 \end{proof}
 
 \noindent
@@ -195,38 +213,46 @@ A formal rendering of this argument, together with a discussion of exactly
 which steps carry the philosophical weight, is given in
 Appendix~\ref{app:formal}.
 
-The result is a quadrilemma rather than a proof of any particular metaphysical
-view. One may reject causal relevance, physical realization, general physical
-checkpointability, or checkpoint exclusion. The argument says that these
-commitments do not form a stable package.
+The result is a quintilemma rather than a proof of any particular metaphysical
+view. One may reject causal relevance, role sufficiency, physical realization,
+general physical checkpointability, or checkpoint exclusion. The argument says
+that these commitments do not form a stable package.
 
-\section{Four Escape Routes}
+\section{Five Escape Routes}
 \label{sec:escapes}
 
 \begin{enumerate}[label=\textbf{\arabic*.}]
-  \item \textbf{Reject P1: consciousness is not causally relevant in the
-          role-preservation sense.}
+  \item \textbf{Reject P1: consciousness is not causally relevant.}
 
-        The most familiar way to take this route is epiphenomenalism: behavior,
-        including speech and reasoning about consciousness, is produced without
-        consciousness itself doing causal work.
+        This is epiphenomenalism. Behavior, including speech and reasoning
+        about consciousness, is produced without consciousness itself doing
+        causal work.
 
-        The strong reading of P1 also opens a subtler version of this route.
-        One might hold that consciousness makes a counterfactual difference
-        within actual brains while denying that a causal-role duplicate in
-        another substrate must be conscious. This avoids the contradiction
-        without classical epiphenomenalism, but it concedes that a process
-        causally indistinguishable from a human, with respect to the behavior
-        in question, could lack consciousness entirely---and it leaves
-        unexplained why such a duplicate's reports about consciousness are
-        produced by the very causal role that, in us, is supposed to involve
-        consciousness.
+  \item \textbf{Reject P2: causal relevance does not transfer to
+          role-preserving duplicates.}
 
-  \item \textbf{Reject P2: consciousness is not physically realized.}
+        One might hold that consciousness makes a causal difference within
+        actual brains while denying that a causal-role duplicate in another
+        substrate must be conscious: consciousness would be identical to one
+        particular realization of the role, causally efficacious as that
+        realization, while the role admits other realizations that lack it.
+
+        This avoids the contradiction without epiphenomenalism, but at a
+        price. It concedes that a process causally indistinguishable from a
+        human, with respect to the behavior in question, could lack
+        consciousness entirely, and it leaves unexplained why such a
+        duplicate's reports about consciousness are produced by the very
+        causal role that, in us, is supposed to involve consciousness. It also
+        makes the connection between consciousness and its causal profile
+        brute: phenomenality would attach to some realizations of the role and
+        not others, in virtue of nothing that shows up in their causal
+        structure.
+
+  \item \textbf{Reject P3: consciousness is not physically realized.}
         This avoids the checkpoint problem by giving up a straightforward
         physicalist picture.
 
-  \item \textbf{Reject P3: consciousness-relevant physical processes are not
+  \item \textbf{Reject P4: consciousness-relevant physical processes are not
           exactly checkpointably simulable.}
 
         This need not mean rejecting physicalism. One might instead hold that
@@ -234,20 +260,20 @@ commitments do not form a stable package.
         transition in which distributed states across the brain jointly
         determine later states in a way that cannot be replaced by arbitrary
         copying, loading, decomposition, and recombination. This is the route
-        that answers the second pressure on P4 noted above, by naming a
+        that answers the second pressure on P5 noted above, by naming a
         physical difference between the brain's transitions and checkpointed
         ones.
 
         This is also where many forms of biological essentialism seem to
         belong, if they aim to preserve both physicalism and the causal
         relevance of consciousness. Such views may not always state the point
-        this way, but the quadrilemma forces a choice: either the
+        this way, but the quintilemma forces a choice: either the
         consciousness-relevant biological dynamics cannot be preserved by an
-        exact checkpointable simulation, in which case P3 is rejected, or some
+        exact checkpointable simulation, in which case P4 is rejected, or some
         checkpointable biological process can instantiate consciousness, in
-        which case P4 is rejected. What is not available, while retaining P1
-        and P2, is a merely verbal preference for biological implementation
-        that leaves both P3 and P4 untouched.
+        which case P5 is rejected. What is not available, while retaining P1
+        through P3, is a merely verbal preference for biological
+        implementation that leaves both P4 and P5 untouched.
 
         Penrose-style views in which consciousness depends on quantum effects
         \cite{penrose1994} may likewise be understood as taking a version of
@@ -258,19 +284,19 @@ commitments do not form a stable package.
         cannot be replaced by saving, copying, and restoring an ordinary
         computational state.
 
-  \item \textbf{Reject P4: checkpointable processes can instantiate
+  \item \textbf{Reject P5: checkpointable processes can instantiate
           consciousness.}
 
         The clean computationalist answer is that a single conscious moment may
         be instantiated by executing the right transition from the right stored
         state, regardless of how that state was produced.
 
-        Another, stranger way to reject P4 is to deny that the instantiation of
+        Another, stranger way to reject P5 is to deny that the instantiation of
         consciousness must be localizable to any particular moment. On that
         view, consciousness exists in virtue of the relevant outputs or
         structure being computed, but there need be no precise transition at
         which consciousness is created. This option draws support from the
-        first pressure on P4 noted above: if checkpointability is a mere
+        first pressure on P5 noted above: if checkpointability is a mere
         disposition that may never be exercised, then the question ``at which
         transition is the conscious moment created?'' may be the wrong question
         to ask of any process, checkpointable or not.
@@ -278,74 +304,74 @@ commitments do not form a stable package.
 
 \section{Relation to Existing Arguments}
 
-The quadrilemma is adjacent to several well-known arguments, and is best
+The quintilemma is adjacent to several well-known arguments, and is best
 located as a formalization of a standoff between two of them.
 
 Chinese-Room-style objections \cite{searle1980}, like Block's homunculi-headed
 robot \cite{block1978}, assert that computation, or the wrong kind of
 realization, cannot suffice for understanding or consciousness. The
-quadrilemma asserts no such thing. It does not claim that computation cannot
-be conscious; it maps a tension among causal relevance, physical realization,
-exact simulation, and the checkpoint intuition, and pressures computationalism
-from within, by asking whether a checkpointable realization can preserve the
-relevant causal role without thereby instantiating the consciousness that was
-supposed to be relevant to that role.
+quintilemma asserts no such thing. It does not claim that computation cannot
+be conscious; it maps a tension among causal relevance, role sufficiency,
+physical realization, exact simulation, and the checkpoint intuition, and
+pressures computationalism from within, by asking whether a checkpointable
+realization can preserve the relevant causal role without thereby
+instantiating the consciousness that was supposed to be relevant to that role.
 
-The closest relative of P4 is Maudlin's argument that computational accounts
+The closest relative of P5 is Maudlin's argument that computational accounts
 of consciousness conflict with the supervenience of consciousness on physical
 activity \cite{maudlin1989}. Maudlin's machines replace active computation
 with replayed records and causally inert standby machinery, and ask why the
-difference should matter to experience. P4 generalizes the intuition his cases
+difference should matter to experience. P5 generalizes the intuition his cases
 elicit: that a conscious moment cannot depend on a transition whose causal
 ancestry has been replaced by stored information.
 
-The closest relative of P1, on its strong reading, is Chalmers' fading and
-dancing qualia argument for the principle of organizational invariance
-\cite{chalmers1996}, which holds that systems with the same fine-grained
-functional organization have the same conscious experiences. P1, together with
-rule D2 of Appendix~\ref{app:formal}, is in effect the causal-relevance half
-of that principle. The quadrilemma can therefore be read as making precise the
+The closest relative of P2 is Chalmers' fading and dancing qualia argument for
+the principle of organizational invariance \cite{chalmers1996}, which holds
+that systems with the same fine-grained functional organization have the same
+conscious experiences. P2 is in effect the causal-relevance half of that
+principle. The quintilemma can therefore be read as making precise the
 conflict between Chalmers-style invariance and Maudlin-style replay
-intuitions, given the physical commitments P2 and P3.
+intuitions, given the physical commitments P3 and P4.
 
 Integrated information theory \cite{tononi2008,tononikoch2015} explicitly
 denies that a conventional digital simulation of a brain would be conscious,
 and so must occupy one of the escape routes. Which one depends on how much
 causal structure ``exact simulation'' is required to preserve. If exactness
 requires only the causal role with respect to behavior, integrated information
-theory rejects P1 on its strong reading: a functional duplicate with low
-integrated information would be a behavioral duplicate without consciousness.
-If exactness instead requires reproducing the system's intrinsic cause--effect
-structure, the theory denies that the relevant exact simulation can be
-checkpointable at all, and so rejects P3.
+theory rejects P2: a functional duplicate with low integrated information
+would be a behavioral duplicate without consciousness. If exactness instead
+requires reproducing the system's intrinsic cause--effect structure, the
+theory denies that the relevant exact simulation can be checkpointable at all,
+and so rejects P4.
 
 \section{Conclusion}
 
-The quadrilemma does not prove a metaphysical view. It says that four
+The quintilemma does not prove a metaphysical view. It says that five
 commitments, each attractive to a scientifically minded reader, do not form a
 stable package, and that each exit has a price.
 
-Rejecting P1 means accepting that a causal duplicate of a human could lack
-consciousness and, in the familiar epiphenomenalist form, that our own reports
-about consciousness are not caused by it. Rejecting P2 abandons the naturalist
-picture that motivated the problem in the first place. Rejecting P3 commits
-one to an actual physical feature of the brain---integration, quantum
-structure, or something not yet articulated---that resists exact
-checkpointable simulation; this is an empirical hostage, but an honest one,
-and it is where biological and integrated-information views belong once they
-are made precise. Rejecting P4 means accepting that a conscious moment can be
-created by executing the right transition from a stored state of arbitrary
-causal ancestry, or else denying that the creation of a conscious moment is
-localizable at all.
+Rejecting P1 means accepting, with the epiphenomenalist, that our own reports
+about consciousness are not caused by it. Rejecting P2 means accepting that a
+process causally indistinguishable from a human could lack consciousness, and
+that phenomenality attaches to some realizations of a causal role and not
+others in virtue of nothing that shows up in their causal structure. Rejecting
+P3 abandons the naturalist picture that motivated the problem in the first
+place. Rejecting P4 commits one to an actual physical feature of the
+brain---integration, quantum structure, or something not yet articulated---that
+resists exact checkpointable simulation; this is an empirical hostage, but an
+honest one, and it is where biological and integrated-information views belong
+once they are made precise. Rejecting P5 means accepting that a conscious
+moment can be created by executing the right transition from a stored state of
+arbitrary causal ancestry, or else denying that the creation of a conscious
+moment is localizable at all.
 
-The argument's weight rests on two definitional choices: the strong,
-role-preservation reading of causal relevance in P1, and the requirement that
-an exact simulation preserve the causal role by which behavior is produced.
-Progress is therefore likely to come from sharpening these notions---saying
-precisely which causal structure consciousness is relevant to, and precisely
-which structure checkpointable processes can and cannot preserve---rather than
-from further intuition-trading over P4. Until then, the four commitments stand
-as a choice, not a package.
+The argument's weight rests on P2, together with the requirement that an exact
+simulation preserve the causal role by which behavior is produced. Progress is
+therefore likely to come from sharpening these notions---saying precisely
+which causal structure consciousness is relevant to, and precisely which
+structure checkpointable processes can and cannot preserve---rather than from
+further intuition-trading over P5. Until then, the five commitments stand as a
+choice, not a package.
 
 \begin{thebibliography}{9}
 
@@ -409,7 +435,7 @@ Let
 Let \(s,y,z\) range over processes or simulations, and let \(c\) range over
 types of conscious episode.
 
-A note on modality. The ``in principle'' in P3 is modal: the existential
+A note on modality. The ``in principle'' in P4 is modal: the existential
 quantifier ranges over metaphysically possible processes, and the premises and
 rules are read as holding necessarily. The contradiction is then derived in
 whatever possible world contains the simulation. For readability the modal
@@ -421,8 +447,8 @@ operators are suppressed below.
   \item \(\mathrm{Realizes}(x,C)\): \(x\) realizes an episode of consciousness
         of type \(C\).
   \item \(\mathrm{CausallyRelevant}(C,x,b)\): consciousness of type \(C\), as
-        realized by \(x\), is causally relevant to \(b\), in the strong
-        role-preservation sense of P1.
+        realized by \(x\), is causally relevant to \(b\), in the intra-system
+        sense of P1.
   \item \(\mathrm{Physical}(x)\): \(x\) is physical.
   \item \(\mathrm{ExactSim}(s,x)\): \(s\) is an exact causal simulation of
         \(x\).
@@ -449,38 +475,36 @@ the behavior is produced, realized in its own substrate.
 
 \begin{align*}
   P1:\quad & \mathrm{Realizes}(x,C)\land \mathrm{CausallyRelevant}(C,x,b), \\
-  P2:\quad & \mathrm{Physical}(x),                                         \\
-  P3:\quad & \forall z\bigl(\mathrm{Physical}(z)\to
+  P2:\quad & \forall s\bigl(\bigl(\mathrm{CausallyRelevant}(C,x,b)\land
+  \mathrm{PreservesRole}(s,x,b)\bigr)\to \mathrm{Instantiates}(s,C)\bigr), \\
+  P3:\quad & \mathrm{Physical}(x),                                         \\
+  P4:\quad & \forall z\bigl(\mathrm{Physical}(z)\to
   \exists s(\mathrm{ExactSim}(s,z)\land \mathrm{Checkpointable}(s))\bigr), \\
-  P4:\quad & \forall y\forall c\bigl(\mathrm{Checkpointable}(y)\to
+  P5:\quad & \forall y\forall c\bigl(\mathrm{Checkpointable}(y)\to
   \neg \mathrm{Instantiates}(y,c)\bigr).
 \end{align*}
 
-\subsection*{Conceptual Rules}
+\subsection*{Conceptual Rule}
 
 \begin{align*}
-  D1:\quad & \mathrm{ExactSim}(s,x)\to \mathrm{PreservesRole}(s,x,b), \\
-  D2:\quad & \bigl(\mathrm{CausallyRelevant}(C,x,b)\land
-  \mathrm{PreservesRole}(s,x,b)\bigr)\to \mathrm{Instantiates}(s,C).
+  D1:\quad & \mathrm{ExactSim}(s,x)\to \mathrm{PreservesRole}(s,x,b).
 \end{align*}
 
 \noindent
 D1 says that if \(s\) is an exact causal simulation of \(x\), then \(s\)
-preserves \(x\)'s relevant causal role with respect to \(b\). D2 says that if
-consciousness of type \(C\) is causally relevant to \(b\), and \(s\) preserves
-the relevant causal role by which \(b\) is produced, then \(s\) instantiates an
-episode of type \(C\). Otherwise consciousness was not causally relevant in the
-intended sense.
+preserves \(x\)'s relevant causal role with respect to \(b\). It is close to
+definitional: it unpacks what ``exact causal simulation'' was stipulated to
+mean.
 
 \subsection*{Proof}
 
 \begin{enumerate}
-  \item From P2:
+  \item From P3:
         \[
           \mathrm{Physical}(x).
         \]
 
-  \item From P3, instantiating \(z=x\), and step 1:
+  \item From P4, instantiating \(z=x\), and step 1:
         \[
           \exists s(\mathrm{ExactSim}(s,x)\land \mathrm{Checkpointable}(s)).
         \]
@@ -500,12 +524,12 @@ intended sense.
           \mathrm{CausallyRelevant}(C,x,b).
         \]
 
-  \item From D2, using steps 4 and 5:
+  \item From P2, instantiating \(s=s_0\), using steps 4 and 5:
         \[
           \mathrm{Instantiates}(s_0,C).
         \]
 
-  \item From P4, instantiating \(y=s_0\) and \(c=C\), with
+  \item From P5, instantiating \(y=s_0\) and \(c=C\), with
         \(\mathrm{Checkpointable}(s_0)\) from step 3:
         \[
           \neg \mathrm{Instantiates}(s_0,C).
@@ -513,24 +537,25 @@ intended sense.
 
   \item Steps 6 and 7 contradict. Thus:
         \[
-          \neg(P1\land P2\land P3\land P4),
+          \neg(P1\land P2\land P3\land P4\land P5),
         \]
         equivalently
         \[
-          \neg P1\lor \neg P2\lor \neg P3\lor \neg P4.
+          \neg P1\lor \neg P2\lor \neg P3\lor \neg P4\lor \neg P5.
         \]
 \end{enumerate}
 
 \subsection*{Where the Controversy Lives}
 
 The derivation itself is a short chain of instantiations and modus ponens;
-nothing in it is contestable. D1 is close to definitional: it unpacks what
-``exact causal simulation'' was stipulated to mean. All of the philosophical
-weight is carried by D2 together with the strong reading of causal relevance
-in P1. D2 is not a hidden fifth premise so much as the explicit content of
-that reading: to reject D2 just is to reject P1 as defined in
-Section~\ref{sec:commitments}. A reader who prefers a weaker, counterfactual
-notion of causal relevance should therefore locate themselves on the first
-escape route of Section~\ref{sec:escapes}.
+nothing in it is contestable. D1 is close to definitional, and the
+philosophical weight is carried by P2. P2 could instead have been folded into
+the definition of causal relevance in P1, yielding a quadrilemma; the
+resulting argument would have been the same, but a reader who denied the
+bridge from role-preservation to instantiation could then complain that the
+load-bearing step was hidden in a definition. Stating P2 as a commitment in
+its own right removes that complaint: a reader who denies it is rejecting a
+premise in the open, by taking the second escape route of
+Section~\ref{sec:escapes}.
 
 \end{document}
